@@ -1,0 +1,14 @@
+{
+  "name": "blind75",
+  "version": "1.0.0",
+  "description": "This is a collection of popular Blind 75 data structures and algorithm problems, along with their tests implemented using JS",
+  "main": "n",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Aditya Negandhi",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
