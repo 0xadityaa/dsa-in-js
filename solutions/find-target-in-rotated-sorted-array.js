@@ -1,4 +1,5 @@
 // Pseudo Code:
+// Implementing Binary Search
 // Initialize two pointers, lPtr and rPtr, to the start and end of the array.
 // While lPtr is less than or equal to rPtr:
 //   Calculate the mid index as the average of lPtr and rPtr.
