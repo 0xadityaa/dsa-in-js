@@ -13,7 +13,6 @@ describe('minimizedMaximum', () => {
         const quantities = [8];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(2);
-        // Explanation: 8 can be split as 2+2+2+2
     });
 
     test('case where n equals total quantities length', () => {
@@ -21,7 +20,6 @@ describe('minimizedMaximum', () => {
         const quantities = [2, 3, 4];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(4);
-        // Each quantity gets one store
     });
 
     test('case with larger numbers', () => {
@@ -29,7 +27,6 @@ describe('minimizedMaximum', () => {
         const quantities = [15, 10, 10];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(5);
-        // 15 splits into 5+5+5, 10 splits into 5+5, 10 splits into 5+5
     });
 
     test('edge case with minimum possible n', () => {
@@ -37,7 +34,6 @@ describe('minimizedMaximum', () => {
         const quantities = [3, 3];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(3);
-        // Each quantity gets one store
     });
 
     test('case with different sized quantities', () => {
@@ -45,7 +41,6 @@ describe('minimizedMaximum', () => {
         const quantities = [20, 5, 15];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(5);
-        // 20 splits as 5+5+5+5, 5 as 5, 15 as 5+5+5
     });
 
     test('edge case with large single quantity', () => {
@@ -53,7 +48,6 @@ describe('minimizedMaximum', () => {
         const quantities = [100];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(10);
-        // 100 splits into 10 stores with 10 each
     });
 
     // Error cases
@@ -68,6 +62,5 @@ describe('minimizedMaximum', () => {
         const quantities = [1, 1, 1, 1];
         const result = minimizedMaximum(n, quantities);
         expect(result).toBe(1);
-        // Each quantity gets one store
     });
 });
